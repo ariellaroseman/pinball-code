@@ -1,0 +1,19 @@
+from gpiozero import Button
+
+score = 0
+
+bumper1 = button()
+bumper2 = button()
+bumper3 = button()
+outzone = button()
+
+while True:
+  if pressed(bumper1):
+    score += 20
+  elif pressed(button2): 
+    score += 20
+  elif pressed(bumper3):
+    score += 50
+  elif pressed(outzone):
+    print("Final Score: ", score, " points")
+    break
